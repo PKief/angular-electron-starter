@@ -1,2 +1,2 @@
-# angular2-webpack
-basic angular 2 setup with webpack
+# angular-electron-starter
+An angular starter kit based on electron.
