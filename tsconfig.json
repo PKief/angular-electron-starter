@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "typeRoots": [
+      "../node_modules/@types"
+    ],
+    "types": [
+      "core-js",
+      "chai",
+      "node",
+      "jasmine",
+      "lodash"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "packages"
+  ]
+}
