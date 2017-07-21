@@ -12,7 +12,8 @@
     "package:linux": "cross-var electron-packager . $npm_package_name-$npm_package_version --ignore=src --ignore=e2e --ignore=.*\\.conf\\.js --ignore=\"(angular-cli|tsconfig)\\.json\" --ignore=webpack.*\\.js --out=packages --platform=linux --arch=all --overwrite",
     "package:mac": "cross-var electron-packager . $npm_package_name-$npm_package_version --ignore=src --ignore=e2e --ignore=.*\\.conf\\.js --ignore=\"(angular-cli|tsconfig)\\.json\" --ignore=webpack.*\\.js --out=packages --platform=darwin --arch=all --overwrite ",
     "package:win": "cross-var electron-packager . $npm_package_name-$npm_package_version --ignore=src --ignore=e2e --ignore=.*\\.conf\\.js --ignore=\"(angular-cli|tsconfig)\\.json\" --ignore=webpack.*\\.js --out=packages --platform=win32 --arch=all --overwrite ",
-    "package:all": "cross-var electron-packager . $npm_package_name-$npm_package_version --ignore=src --ignore=e2e --ignore=.*\\.conf\\.js --ignore=\"(angular-cli|tsconfig)\\.json\" --ignore=webpack.*\\.js --out=packages --all --overwrite"
+    "package:all": "cross-var electron-packager . $npm_package_name-$npm_package_version --ignore=src --ignore=e2e --ignore=.*\\.conf\\.js --ignore=\"(angular-cli|tsconfig)\\.json\" --ignore=webpack.*\\.js --out=packages --all --overwrite",
+    "tslint": "tslint ./src/**/*.ts -t stylish"
   },
   "main": "dist/entry.js",
   "license": "MIT",

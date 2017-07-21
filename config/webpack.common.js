@@ -22,6 +22,11 @@ module.exports = {
         rules: [
             {
                 test: /\.ts$/,
+                enforce: 'pre',
+                loader: 'tslint-loader'                
+            },
+            {
+                test: /\.ts$/,
                 loaders: ['ts-loader', 'angular2-template-loader', 'angular2-router-loader']
             },
             {
