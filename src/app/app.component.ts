@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-require('./../../styles/styles.global.scss');
+require('./../styles/styles.global.scss');
 
 @Component({
-    selector: 'app',
+    selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })
