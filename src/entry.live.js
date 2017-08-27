@@ -9,7 +9,11 @@ let win;
 function createWindow() {
     setTimeout(() => {
         // Create the browser window.
-        win = new BrowserWindow({ width: 800, height: 600, icon: __dirname + '/images/favicon.ico' });
+        win = new BrowserWindow({
+            width: 800,
+            height: 600,
+            icon: __dirname + './favicon.ico'
+        });
 
         // and load the index.html of the app.
         win.loadURL(url.format({
