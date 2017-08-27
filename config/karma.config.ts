@@ -1,13 +1,13 @@
-var webpackConfig = require('./webpack.test');
+import webpackConfig from './webpack.test';
 
-module.exports = function (config) {
-  var _config = {
+export default function (config) {
+  const _config = {
     basePath: '',
 
     frameworks: ['jasmine'],
 
     files: [
-      {pattern: './config/karma-test-shim.js', watched: false}
+      { pattern: './config/karma-test-shim.js', watched: false }
     ],
 
     preprocessors: {
@@ -34,4 +34,4 @@ module.exports = function (config) {
   };
 
   config.set(_config);
-};
+}

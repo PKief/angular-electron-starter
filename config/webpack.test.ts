@@ -1,6 +1,7 @@
-var helpers = require('./helpers');
+import * as helpers from './helpers';
+import * as webpack from "webpack";
 
-module.exports = {
+const config: webpack.Configuration = {
   devtool: 'inline-source-map',
 
   resolve: {
@@ -8,39 +9,41 @@ module.exports = {
   },
 
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.ts$/,
-        loaders: ['ts-loader', 'angular2-template-loader', 'angular2-router-loader']
+        use: ['awesome-typescript-loader', 'angular2-template-loader', 'angular-router-loader']
       },
       {
         test: /\.html$/,
-        loader: 'html-loader'
+        use: 'html-loader'
 
       },
       {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-        loader: 'null-loader'
+        use: 'null-loader'
       },
       {
         test: /\.css$/,
         exclude: helpers.root('src', 'app'),
-        loader: 'null-loader'
+        use: 'null-loader'
       },
       {
         test: /\.css$/,
         include: helpers.root('src', 'app'),
-        loader: 'raw'
+        use: 'raw'
       },
       {
         test: /\.scss$/,
         exclude: [/\.global\.scss$/],
-        loaders: ['raw-loader', 'sass-loader']
+        use: ['raw-loader', 'sass-loader']
       },
       {
         test: /\.global\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader']
+        use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   }
-}
+};
+
+export default config;

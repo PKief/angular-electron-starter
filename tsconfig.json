@@ -20,7 +20,9 @@
       "chai",
       "node",
       "jasmine",
-      "lodash"
+      "lodash",
+      "webpack",
+      "html-webpack-plugin"
     ]
   },
   "exclude": [
