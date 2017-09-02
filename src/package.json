@@ -1,0 +1,8 @@
+{
+    "name": "angular-elctron-starter",
+    "productName": "Angular Electron Starter",
+    "version": "1.0.0",
+    "description": "Angular Electron Starter",
+    "main": "entry.js",
+    "license": "MIT"
+}

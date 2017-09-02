@@ -77,6 +77,9 @@ const config: webpack.Configuration = {
     new CopyWebpackPlugin([{
       context: path.resolve('src'),
       from: "entry.js"
+    }, {
+      context: path.resolve('src'),
+      from: "package.json"
     }])
   ]
 };
